@@ -1,0 +1,138 @@
+/*Master styles*/
+body{
+    overflow-x: hidden;
+    font-size: 150%;
+    font-family: "Noto Sans", sans-serif;
+    margin: 0px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+/*Nav styles*/
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 36px;
+}
+
+.left-side{
+    display: flex;
+}
+
+.nav-wrapper > .left-side > div{
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase
+}
+
+.nav-link-wrapper{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a{
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover{
+    border-bottom: 1px solid maroon;
+}
+
+.nav-link-wrapper a:hover{
+    color: maroon;
+}
+
+/*Portfolio Styles*/
+
+.portfolio-items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.portfolio-item-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-img-background{
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    left: 50%;
+    margin-left: -250px;
+    right: 50%;
+    margin-right: -250px;
+    width:500px;
+    height:500px;
+}
+
+.logo-wrapper img{
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.img-text-wrapper .subtitle{
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle{
+    font-weight: 600;
+    color: maroon;
+}
+
+a:hover{
+    font-weight: 600;
+    color: maroon;
+}
+
+a{
+    transition: .5s;
+    font-weight: 600;
+    color: transparent;
+}
+
+.img-darken{
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+/*About Page*/
+.two-column-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 100px;
+}
+
+.profile-image-wrapper img{
+    width: 75%;
+}
+
+.profile-content-wrapper{
+    padding: 30px;
+}
+
+.profile-content-wrapper h1{
+    color: maroon;
+}
