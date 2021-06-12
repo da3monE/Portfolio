@@ -11,7 +11,7 @@
         <div class="nav-wrapper">
             <div class="left-side"> <!--Left side of nav-->
                     <div class="nav-link-wrapper">
-                        <a href="about.html">About</a> <!--About-->
+                        <a href="index.html">About</a> <!--About-->
                     </div>
                 
                     <div class="nav-link-wrapper">
@@ -80,7 +80,7 @@
 
     portfolioItems.forEach(portfolioItem => {
         portfolioItem.addEventListener('mouseout', () => {
-            portfolioItem.childNodes[1].classList.remove('img-darken');
+            portfolioItem.childNodes[1].classList.add('img-lighten');
         })
     })
 </script>
